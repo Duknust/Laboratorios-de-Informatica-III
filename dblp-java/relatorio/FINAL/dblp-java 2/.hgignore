@@ -1,0 +1,8 @@
+syntax: glob
+build/*
+dist/*
+.hgignore.orig
+Autor.java.orig
+*.orig
+newfile
+nbproject/*

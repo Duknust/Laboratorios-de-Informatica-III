@@ -1,0 +1,12 @@
+CC=gcc
+CFLAGS=-Wall -Wextra -O2 -g
+
+
+OBJS= $(patsubst %.c, %.o,$(wildcard *.c))
+
+
+PARSER_LI3: $(OBJS)
+	$(CC) $(CFLAGS) $(LIBS) -o PARSER_LI3 $(OBJS)
+
+clean:
+	rm -rf *.o
